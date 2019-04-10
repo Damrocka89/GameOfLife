@@ -4,7 +4,6 @@ import GameOfLife.Cell;
 import GameOfLife.Coordinates;
 import GameOfLife.GameOfLife;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -46,20 +45,20 @@ public class GameOfLifeTest {
         Assertions.assertTrue(gameOfLife.getAliveCells().isEmpty());
     }
 
-    @Test
-    @Disabled
-    private void cellsShouldBeBorn(){
-        gameOfLife.addCellToList(2,5);
-        gameOfLife.addCellToList(3,5);
-        gameOfLife.addCellToList(3,4);
-        List<Cell> list=new ArrayList<Cell>();
-        list.add(new Cell(new Coordinates(2,5)));
-        list.add(new Cell(new Coordinates(3,5)));
-        list.add(new Cell(new Coordinates(3,4)));
-        list.add(new Cell(new Coordinates(2,4)));
-        gameOfLife.następnePokolenie();
-        Assertions.assertEquals(list,gameOfLife.getAliveCells());
-    }
+//    @Test
+//    @Disabled
+//    private void cellsShouldBeBorn(){
+//        gameOfLife.addCellToList(2,5);
+//        gameOfLife.addCellToList(3,5);
+//        gameOfLife.addCellToList(3,4);
+//        List<Cell> list=new ArrayList<Cell>();
+//        list.add(new Cell(new Coordinates(2,5)));
+//        list.add(new Cell(new Coordinates(3,5)));
+//        list.add(new Cell(new Coordinates(3,4)));
+//        list.add(new Cell(new Coordinates(2,4)));
+//        gameOfLife.następnePokolenie();
+//        Assertions.assertEquals(list,gameOfLife.getAliveCells());
+//    }
 
 
 }
